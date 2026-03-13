@@ -286,7 +286,7 @@ export default function App() {
             <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
             
             <p className="text-gray-300 text-lg leading-relaxed">
-            Jacknson adalah band bergenre alternative rock dengan sentuhan emo yang menghadirkan warna musik penuh emosi, energi, dan kejujuran dalam setiap karya. <strong className="text-white">JACK ن SON </strong>Terbentuk dari keresahan dan cerita nyata tentang kehidupan, cinta, kehilangan, dan perjałangn pendewasaan.
+            Jacknson adalah band bergenre alternative rock dengan sentuhan emo yang menghadirkan warna musik penuh emosi, energi, dan kejujuran dalam setiap karya. <strong className="text-white">JACK ن SON </strong>Terbentuk dari keresahan dan cerita nyata tentang kehidupan, cinta, kehilangan, dan perjalanan pendewasaan.
             </p>
             <p className="text-gray-400 leading-relaxed">
             JACK ن SON  membawa pengalaman yang relate bagi para pendengarnya.

@@ -94,20 +94,21 @@ export default function App() {
 
   // --- DATA ---
   const members = [
-    { name: "Dicky", role: "Guitar", img: "/images/balmon.jpeg" },
-    { name: "EMBE", role: "Vocalist", img: "/images/Embe.jpeg" },
-    { name: "alief", role: "Rhythm Guitar", img: "/images/Foto1.jpeg" },
-    { name: "alief", role: "Bassist", img: "/images/Foto2.jpeg" },
-    { name: "alief", role: "Drummer", img: "/images/Foto3.jpeg" },
+    { name: "KHIBRAN ABDI DZILJALAN", role: "Vocalist", img: "/images/Embe.jpeg" },
+    { name: "DICKY ALAMSYAH", role: "Lead Guitar", img: "/images/balmon.jpeg" },
+    { name: "HILMI FAHRI RAMDANI", role: "Rhythm Guitar", img: "/images/hilmi.jpeg" },
+    { name: "DHIYA FARSHAD RAYA", role: "Bassist", img: "/images/dhiya.jpeg" },
+    { name: "FAIZ NAJMI ARKAN", role: "Keyboardist", img: "/images/faiz.jpeg" },
+    { name: "RINENGGO IMAN SANTOSO", role: "DRUMMER", img: "/images/rinenggo.jpeg" },
   ];
 
   const latestSingle = {
-    title: "CYBERNETIC HEARTBEAT",
-    date: "Dirilis: Oktober 2025",
+    title: "Say It Till I Believe",
+    date: "",
     description: "Dengarkan single terbaru kami. Sebuah perjalanan sonik melintasi dimensi dengan distorsi berat dan synth futuristik.",
-    cover: "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    cover: "/images/Cover.jpg",
     // CARA MENGGANTI LAGU: Ganti URL di bawah ini dengan file lagu Anda (misal: "./audio/lagu-baru.mp3")
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    audioSrc: "/audio/lagu.mp3"
   };
 
   // --- STYLES ---
@@ -190,7 +191,7 @@ export default function App() {
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20 animate-pulse"></div>
         <Music className="w-16 h-16 text-purple-500 animate-bounce mb-4 drop-shadow-[0_0_15px_rgba(168,85,247,1)]" />
         <h1 className="text-4xl md:text-6xl font-syncopate font-bold tracking-[0.3em] bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 animate-pulse-glow">
-          BAL<span className="text-white">MON</span>
+          JACK<span className="text-white">ن</span> SON
         </h1>
         <div className="w-48 h-1 bg-gray-800 mt-8 rounded-full overflow-hidden">
           <div className="h-full bg-gradient-to-r from-purple-500 to-blue-500 animate-[pulse_1s_ease-in-out_infinite]" style={{ width: '100%' }}></div>
@@ -221,14 +222,14 @@ export default function App() {
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center">
           <Reveal direction="down">
             <p className="text-purple-400 font-syncopate tracking-[0.5em] text-sm md:text-base mb-4 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]">
-              EST. 2021 • ELECTRONIC ROCK
+              • ELECTRONIC ROCK
             </p>
           </Reveal>
           
           <Reveal delay={200}>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-syncopate font-bold mb-6 tracking-tighter">
-              <span className="text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">BAL</span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]">MON</span>
+              <span className="text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">JACK</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 drop-shadow-[0_0_25px_rgba(168,85,247,0.8)]">ن</span>SON
             </h1>
           </Reveal>
           
@@ -273,36 +274,30 @@ export default function App() {
                 className="relative rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 object-cover w-full h-[500px]"
               />
               {/* Glassmorphism Badge */}
-              <div className="absolute bottom-6 -right-6 lg:-right-12 bg-white/10 backdrop-blur-xl border border-white/20 p-6 rounded-2xl shadow-2xl shadow-black/50">
-                <h3 className="text-4xl font-syncopate font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">05</h3>
-                <p className="text-sm tracking-widest text-gray-400">YEARS ACTIVE</p>
-              </div>
+              
             </div>
           </Reveal>
 
           {/* Text Right */}
           <Reveal direction="left" className="w-full lg:w-1/2 space-y-8">
             <h2 className="text-4xl md:text-5xl font-syncopate font-bold">
-              THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">STORY</span>
+              INTRO<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">DUCTION</span>
             </h2>
             <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
             
             <p className="text-gray-300 text-lg leading-relaxed">
-              Terbentuk di tengah gemerlap lampu kota pada tahun 2021, <strong className="text-white">BALMON</strong> muncul sebagai anomali di industri musik. Kami memadukan energi raw dari musik rock alternatif dengan elemen elektronik futuristik, menciptakan soundscape yang membawa pendengar melampaui batas realitas.
+            Jacknson adalah band bergenre alternative rock dengan sentuhan emo yang menghadirkan warna musik penuh emosi, energi, dan kejujuran dalam setiap karya. <strong className="text-white">JACK ن SON </strong>Terbentuk dari keresahan dan cerita nyata tentang kehidupan, cinta, kehilangan, dan perjałangn pendewasaan.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              Dengan lebih dari 100 panggung festival nasional maupun internasional, penampilan live kami bukan sekadar konser—melainkan sebuah pengalaman audiovisual sinematik yang dirancang untuk membangkitkan adrenalin dan emosi.
+            JACK ن SON  membawa pengalaman yang relate bagi para pendengarnya.
             </p>
             
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-purple-500/50 transition-colors group">
                 <h4 className="font-syncopate text-purple-400 text-sm mb-1 group-hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]">GENRE</h4>
-                <p className="text-lg font-bold">Cyber-Rock / Synthwave</p>
+                <p className="text-lg font-bold">Rock</p>
               </div>
-              <div className="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-blue-500/50 transition-colors group">
-                <h4 className="font-syncopate text-blue-400 text-sm mb-1 group-hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">FORMED</h4>
-                <p className="text-lg font-bold">2021, Metropolis</p>
-              </div>
+              
             </div>
           </Reveal>
         </div>
@@ -315,7 +310,7 @@ export default function App() {
             <h2 className="text-4xl md:text-5xl font-syncopate font-bold mb-4">
               THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500 drop-shadow-[0_0_10px_rgba(168,85,247,0.5)]">SQUAD</span>
             </h2>
-            <p className="text-gray-400">Jiwa dan mesin di balik suara BALMON.</p>
+            <p className="text-gray-400">Jiwa dan mesin di balik suara JACK ن SON</p>
           </Reveal>
 
           {/* Grid Layout for 5 members: 3 on top, 2 on bottom centered */}
@@ -405,34 +400,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- 5. GALLERY / VIDEO SECTION --- */}
-      <section className="relative py-24 bg-black/50 border-t border-white/5 z-10">
-        <div className="max-w-6xl mx-auto px-4">
-          <Reveal className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-syncopate font-bold mb-4">
-              VISUAL <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">ARCHIVE</span>
-            </h2>
-            <p className="text-gray-400">Saksikan video musik atau live performance terbaru kami.</p>
-          </Reveal>
-
-          <Reveal direction="up">
-            <div className="relative aspect-video w-full rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.8)] border border-white/10">
-              {/* CARA MENGGANTI VIDEO: Ganti URL src pada iframe di bawah ini dengan link embed YouTube video band Anda */}
-              <iframe 
-                width="100%" 
-                height="100%" 
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=abcdefghijk" 
-                title="YouTube video player" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerPolicy="strict-origin-when-cross-origin" 
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              ></iframe>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      
 
       {/* --- 6. BOOKING SECTION --- */}
       <section id="booking" className="relative py-32 px-6 overflow-hidden z-10">
@@ -450,13 +418,13 @@ export default function App() {
           </Reveal>
 
           <Reveal direction="up" className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="#" className="group relative px-8 py-5 bg-black border border-green-500 hover:bg-green-500/10 text-white font-syncopate text-sm font-bold tracking-wider rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,197,94,0.3)]">
+            <a href="https://wa.me/6282116935883" className="group relative px-8 py-5 bg-black border border-green-500 hover:bg-green-500/10 text-white font-syncopate text-sm font-bold tracking-wider rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,197,94,0.3)]">
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <MessageCircle size={20} className="text-green-400 group-hover:text-green-300" /> WHATSAPP BOOKING
               </span>
             </a>
             
-            <a href="#" className="group relative px-8 py-5 bg-purple-600 hover:bg-purple-500 text-white font-syncopate text-sm font-bold tracking-wider rounded-2xl overflow-hidden transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.8)]">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Jacknsonn@gmail.com"  className="group relative px-8 py-5 bg-purple-600 hover:bg-purple-500 text-white font-syncopate text-sm font-bold tracking-wider rounded-2xl overflow-hidden transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:shadow-[0_0_40px_rgba(168,85,247,0.8)]">
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <Mail size={20} /> EMAIL BOOKING
               </span>
@@ -469,17 +437,17 @@ export default function App() {
       <footer className="relative bg-[#020202] pt-16 pb-8 border-t border-white/10 z-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
           <h2 className="text-3xl font-syncopate font-bold tracking-[0.3em] mb-8 text-white">
-            BAL<span className="text-purple-500">MON</span>
+            JACK<span className="text-purple-500">ن SON</span>
           </h2>
           
           <div className="flex gap-6 mb-12">
-            <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-purple-500/20 text-gray-400 hover:text-purple-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.5)]">
+            <a href="https://instagram.com/jacknson_"className="p-3 bg-white/5 rounded-full hover:bg-purple-500/20 text-gray-400 hover:text-purple-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.5)]">
               <Instagram size={24} />
             </a>
-            <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-green-500/20 text-gray-400 hover:text-green-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,197,94,0.5)]">
+            <a href="https://wa.me/6282116935883" className="p-3 bg-white/5 rounded-full hover:bg-green-500/20 text-gray-400 hover:text-green-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,197,94,0.5)]">
               <MessageCircle size={24} />
             </a>
-            <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-blue-500/20 text-gray-400 hover:text-blue-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Jacknsonn@gmail.com" className="p-3 bg-white/5 rounded-full hover:bg-blue-500/20 text-gray-400 hover:text-blue-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)]">
               <Mail size={24} />
             </a>
           </div>
@@ -487,7 +455,7 @@ export default function App() {
           <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8"></div>
           
           <p className="text-gray-600 text-sm font-syncopate tracking-widest text-center">
-            &copy; {new Date().getFullYear()} BALMON BAND. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} JACK ن SON. ALL RIGHTS RESERVED.
           </p>
         </div>
       </footer>
